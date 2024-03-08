@@ -1,0 +1,19 @@
+
+<table class="table table-striped table-bordered table-hover">
+    <thead class="my-component" >
+            <th></th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Stock</th>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let item of products">
+            <td ><img src="{{item.imageUrl}}" alt="" height="50"></td>
+            <td>{{item.name}}</td>
+            <td>{{item.unitPrice| currency:'USD'}}</td>
+            <td>{{item.unitsInStock}}</td>
+        </tr>
+    </tbody>
+</table>
+
